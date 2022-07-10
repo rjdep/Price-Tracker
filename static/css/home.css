@@ -1,0 +1,17 @@
+div.info {
+    color: #090314;
+    /* background-color:  #fcf37ead; */
+    background-color: rgba(50, 115, 220, 0.3);
+    border: 1px solid;
+    font-size: large;
+    font-weight:500;
+    margin: 5em;
+    padding:15px 10px;
+    letter-spacing: 0.08em;
+}
+
+body{
+    /* background:  url("/static/img/mm.jpg"); */
+    /* background-color: rgb(223, 228, 233); */
+    background-color: white;
+}

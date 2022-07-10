@@ -1,0 +1,74 @@
+body{
+    /* background:  url("/static/img/mm.jpg"); */
+    /* background-color: rgb(223, 228, 233); */
+    background-color: white;
+}
+.container{
+    margin: auto;
+    margin-top: 2em;
+    width: 66%;
+    max-width:500px;
+    background-color: #ffd57a;
+        /* background-color: rgba(50, 115, 220, 0.3); */
+
+}
+
+.form{
+    padding: 5%;
+}
+
+.form_main h4 {
+    font-family: roboto;
+    font-size: xx-large;
+    font-weight:bold;
+    margin-bottom: auto;
+    margin-top: 15% ;
+    text-transform: uppercase;
+}
+.heading {
+    color: rgb(0, 0, 0);
+    font-size:x-large;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3%;
+    position: relative;
+}
+
+.txt[type="number"] {
+    border: 1px solid rgba(243, 5, 5, 0.527);
+    margin: 3% 0;
+    padding: 5% 0 5% 5%;
+    width: 100%;
+}
+.txt_3[type="url"] {
+    margin: 3% 0% 0 0;
+    padding: 5% 0 5% 5%;
+    width: 100%;
+    border: 1px solid rgba(243, 5, 5, 0.527);
+}
+.txt2[type="submit"] {
+    background: #d61e552f none repeat scroll 0 0;
+    border: 1px solid rgba(243, 5, 5, 0.527);
+    border-radius: 25px;
+    color: rgb(97, 7, 7);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 5% 0 0 0;
+    text-align: center;
+    padding: 0;
+    width: 30%;
+    text-transform: uppercase;
+}
+.txt2:hover {
+    background: rgba(24, 2, 39, 0.856) none repeat scroll 0 0;
+    color: #fdfcfc;
+    transition: all 0.5s ease 0s;
+}
+
+.footer-copyright p {
+  text-align: center;
+  margin-bottom: 0;
+  
+}
+
+
