@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/static/css/mylist.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/favicon/favicon (1).ico"
+    />
+  </head>
+  <body>
+    <br />
+
+    {% if a1|length == 0%}
+    <h1>OOPS! You haven't added anything</h1>
+    <!-- <br /> -->
+    <!-- <h1>Add your product by clicking "Add"</h1> -->
+    <br />
+    {% else %}
+    <h1>The Url list</h1>
+    <br />
+    {%endif%} {% for i in range(0,a1|length)|reverse%}
+    <div class="card">
+      <h5 class="card-header" id="aa">
+        Price Upperbound :: &#8377;{{a1[i]}} rupees
+      </h5>
+      <h5 class="card-header" id="bb">Current Price :: {{a4[i]}} rupees</h5>
+      <div class="card-body" style="background-color: #fff1b3">
+        <h6 class="card-title">dated on -: {{a3[i]}}</h6>
+        URL -:
+        <a href="{{a2[i]}}" class="card-text"
+          >Click here to check your product in flipkart</a
+        >
+        <br /><br />
+        <a
+          href="/cancel/{{email}}/{{i}}"
+          type="button"
+          class="btn btn-outline-dark"
+          >Cancel Tracking</a
+        >
+      </div>
+    </div>
+    <br />
+    {%endfor%}
+  </body>
+</html>

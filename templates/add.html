@@ -1,0 +1,71 @@
+<head>
+  <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/static/css/add.css" />
+  <link rel="icon" type="image/x-icon" href="/static/favicon/favicon (1).ico" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="form_main">
+          <h4 class="heading" style="text-align: center">
+            <strong>Enter </strong> Details <span></span>
+          </h4>
+          <div class="form">
+            <form
+              action="/add/{{email}}"
+              method="post"
+              id="contactFrm"
+              name="contactFrm"
+            >
+              <input
+                type="number"
+                required=""
+                placeholder="Please enter the upperbound of your desired amount"
+                value=""
+                name="name"
+                class="txt"
+              />
+              <input
+                type="url"
+                required=""
+                placeholder="Write the Url of the product"
+                name="urlname"
+                class="txt_3"
+              />
+              <div style="text-align: center">
+                <input
+                  type="submit"
+                  value="submit"
+                  name="submit"
+                  class="txt2"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="footer-copyright">
+    <p>
+      <strong>Note: </strong>Enter the URL of the page which contains
+      <strong>"Add to Kart"/"Buy Now" </strong>
+    </p>
+    <br />
+    <p>© 2022 Price Tracker. All Rights Reserved</p>
+  </div>
+  {%if error_1%}
+  <div style="text-align: center; font-size: larger">
+    <p><strong style="color: rgb(252, 247, 248)">** {{error_1}}</strong></p>
+  </div>
+  {% endif %}
+</body>

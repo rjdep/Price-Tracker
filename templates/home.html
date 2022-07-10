@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/home.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/favicon/favicon (1).ico"
+    />
+    <title>PriceTracker</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #530101c5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/add/{{email}}" class="col">Add</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="navbar-brand" href="/mylist/{{email}}" class="col"
+                >My Url List</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav" class="col2">
+            <li class="nav-item">
+              <a class="navbar-brand" href="/">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div class="hero-12-txt pc-20 text-center wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+							<h2 class="h2-title-xl">PriceTracker</h2>
+							<h4 class="h4-md">Free Price Tracker For Flipkart</h4>
+							
+    <div class="info">
+      <h2>About ::</h2>
+      <p>
+        When it comes to online shopping, prices are always fluctuating. So,
+        working out when to buy a product at the best rate you need to
+        constantly keep an eye on its price. And, it gets worse when you find
+        out that you’ve missed out on a great deal.
+
+        <br />
+        So, instead of monitoring price changes manually, you can use this
+        Flipkart Price Tracker which will do all the monitoring of prices of the
+        products available on Flipkart only. (Although, In the future, we may
+        expand it to other e-commerce websites ). The app will monitor the price
+        changes every 30 seconds so that you don't miss out any great deal.
+        <br />
+        <br />
+        <strong>ADDITION OF PRODUCT TRACKER:</strong> <br />
+        Click on the <strong>"Add" </strong> button to add the product which you
+        are looking for. Copy the <strong>CORRECT</strong> product's URL,
+        CORRECT means the URL of the webpage which contains the
+        <strong> "Add to Cart/ Buy Now" </strong> option from the Flipkart
+        Website. Paste the link on the URL's tab, and set an upper bound of the
+        amount of the product. <br /><strong>Note:</strong> At max you can add
+        <strong>{{numMax}}</strong> products at a time. <br /><br />
+        <strong> PRICE DROP ALERTS </strong> <br />
+        Price Tracker alerts you when price of a product that you are tracking
+        is under your set target by sending a notifications to your registered
+        Email ID. <br />
+        <strong>Note: </strong> Once the Email is sent the product will
+        automatically get removed from the tracker list. <br />
+        <br />
+        <strong>CANCELLATION OF PRODUCT TRACKER: </strong> <br />
+        The process of cancellation is very easy. Visit the
+        <strong> "My Url List" </strong> and click on the
+        <strong>"cancel Tracking" </strong>. <br />
+        <br />
+      </p>
+    </div>
+		<div class="footer-copyright">
+		<p>© 2022 Price Tracker. All Rights Reserved</p>
+		</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
